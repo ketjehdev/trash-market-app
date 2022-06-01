@@ -6,6 +6,14 @@ session_start();
 
 error_reporting(0);
 
+if (isset($_SESSION['username'])) {
+	if ($_SESSION['role'] == 'Pengepul') {
+		header("Location: welcome.php");
+	} else {
+		header("Location: ./user/dash.php");
+	}
+}
+
 if (isset($_POST['submit'])) {
 	$email = $_POST['email'];
 	$password = md5($_POST['password']);
