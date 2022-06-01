@@ -20,7 +20,8 @@ if (isset($_POST['submit'])) {
 
 		if ($item_user['password'] == $password) {
 			$_SESSION["username"] = $item_user['username'];
-			header("Location: index.php");
+			$_SESSION["role"] = 'Member';
+			header("Location: ./user/dash.php");
 		}
 	}
 
@@ -31,6 +32,7 @@ if (isset($_POST['submit'])) {
 
 		if ($item_pengepul['password'] == $password) {
 			$_SESSION["username"] = $item_pengepul['username'];
+			$_SESSION["role"] = 'Pengupul';
 			header("Location: register.php");
 		}
 	}
