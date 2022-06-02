@@ -41,8 +41,8 @@ if ($_SESSION["role"] != "Member") {
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-item active nav-link btn">Dashboard</a>
-                    <a href="#aboutus" class="nav-item nav-link btn">Order Service</a>
-                    <a href="#service" class="nav-item nav-link btn">Nofitikasi</a>
+                    <a href="./order_service.php" class="nav-item nav-link btn">Order Service</a>
+                    <a class="nav-item nav-link btn">Nofitikasi</a>
                     <a href="../logout.php" class="nav-item nav-link btn btn-danger text-light px-3" style="margin-left: 10px;">Log out</a>
                 </div>
             </div>
